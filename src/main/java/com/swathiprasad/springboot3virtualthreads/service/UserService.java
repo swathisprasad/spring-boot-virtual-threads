@@ -33,4 +33,9 @@ public class UserService {
         }
     }
 
+    public String getUser(final Long id) {
+        log.info("Get user with id {} using thread {}", id, Thread.currentThread().toString());
+        return "John Doe";
+    }
+
 }
